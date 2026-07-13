@@ -6,8 +6,8 @@ SEPARATOR = ('-' * 48)
 # Строка-разделитель для оформления отчёта
 
 
-def get_user_info():
-    """Собрать данные пользователя"""
+def main():
+    """Собрать данные пользователя."""
     # Создали функцию с вычислениями
     print('Приветствую Вас в программе Fit Life!!!')
     # Приветствие пользователя
@@ -51,8 +51,8 @@ def get_user_info():
     return user_name, user_age, bmi, water_l
 
 
-if __name__ == "__main__":
-    user_name, user_age, bmi, water_l = get_user_info()
+if __name__ == '__main__':
+    user_name, user_age, bmi, water_l = main()
     # Теперь можно будет вызывать функцию из других модулей
     print(
         f'{SEPARATOR}\n'
